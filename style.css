@@ -81,6 +81,17 @@ label{
 
 }
 
+#postal-code{
+    text-align: center;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -moz-appearance: none;
+}
+
 .form2{
     width: 430px;
     display: grid;
@@ -122,6 +133,8 @@ label{
 }
 
 
+/* ---------------- */
+
 
 /* ASIDE */
 
@@ -160,12 +173,13 @@ aside img{
 .count-area{
     display: flex;
     margin: 20px 30px ;
-    border: 1px solid;
+    border: 1px solid #828282;
     border-radius: 12px;
     align-items: center;
     margin-left: auto;
     padding: 12px 15px;
     justify-content: space-between;
+
 }
 
 
@@ -233,4 +247,39 @@ footer a:hover{
     color:#235237;
 }
 
+/* ------------------ */
 
+
+/* MEDIA QUERY */
+
+@media(max-width:970px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        
+    }
+
+    aside{
+        order: 1;
+        grid-column: 1;
+
+
+    }
+
+    .form{
+        order: 2;
+        grid-column: 1;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+    }
+
+ 
+}
