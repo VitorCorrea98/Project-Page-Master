@@ -8,9 +8,9 @@ var count1 = 0;
 
 var totalEl = document.getElementById("total-el")
 
-var valor1 = 54.99 * count1
+var valor1 = 73.99 * count1
 
-var valor2 = 74.99 * count2
+var valor2 = 93.99 * count2
 
 
 
@@ -21,10 +21,13 @@ function increase1(){
     count1 += 1;
     sumEl1.innerHTML = count1;
 
+    var valor1 = 73.99 * count1
 
-    let valor1 = 54.99 * count1
+    var valor2 = 93.99 * count2
+
+    let total = valor1 + valor2
     
-    totalEl.innerHTML ="$" + valor1
+    totalEl.innerHTML ="$" + total
 
 }
 
@@ -33,9 +36,13 @@ function decrease1(){
     count1 -= 1;
     sumEl1.innerHTML = count1;
 
-    let valor1 = 54.99 * count1
+    var valor1 = 73.99 * count1
+
+    var valor2 = 93.99 * count2
+
+    let total = valor1 + valor2
     
-    totalEl.innerHTML ="$" + valor1
+    totalEl.innerHTML ="$" + total
 
 }
 
@@ -51,9 +58,13 @@ function increase2(){
     count2 += 1;
     sumEl2.innerHTML = count2;
 
-    let valor2 = 74.99 * count2;
+    var valor1 = 73.99 * count1
+
+    var valor2 = 93.99 * count2
+
+    let total = valor1 + valor2
     
-    totalEl.innerHTML ="$" + valor2
+    totalEl.innerHTML ="$" + total
 
 }
 
@@ -62,9 +73,13 @@ function decrease2(){
     count2 -= 1;
     sumEl2.innerHTML = count2;
 
-    let valor2 = 74.99 * count2
+    var valor1 = 73.99 * count1
 
-    totalEl.innerHTML ="$" + valor2
+    var valor2 = 93.99 * count2
+
+    let total = valor1 + valor2
+    
+    totalEl.innerHTML ="$" + total
     
 }
 
@@ -76,7 +91,5 @@ function decrease2(){
 
 // Valor total dos produto
 
-var totalEl = document.getElementById("total-el")
 
-
-    totalEl.innerText += valor1
+    totalEl.innerText += 0
