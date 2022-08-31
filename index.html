@@ -15,146 +15,167 @@
     <title>Page Master</title>
 </head>
 <body>
-    
-        
+
+    <h1>Checkout</h1>
 
     <main>
-        <h1>Checkout</h1>
 
-        <!-- TOP FORM -->
-        <h2>Contact Information</h2>
-        <div>
-            <form action="" class="top-form">
-                <label for="email">E-mail</label>
-                <div class="bar">
-                   <i class="fa-solid fa-envelope"></i>
-                   <input type="email" placeholder="Enter your email..." class="info" id="email">
+        <section class="form">
+
+            <!-- TOP FORM -->
+            <h2>Contact Information</h2>
+            <div>
+                <form action="" class="top-form">
+                    <label for="email">E-mail</label>
+                    <div class="bar">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email..." class="info" id="email">
+                    </div>
+
+                    <label for="phone">Phone</label>
+                    <div class="bar">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" placeholder="Enter your phone..." class="info" id="phone">
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- TOP FORM -->
+
+
+            <!-- BOTTOM FORM -->
+
+            <h2>Shipping Address</h2>
+            <div>
+
+                <form action="" class="low-form">
+
+                    <label for="name">Full name</label>
+                    <div class="bar">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" placeholder="Enter your name..." class="info" id="name">
+                    </div>
+
+                    <label for="address">Address</label>
+                    <div class="bar">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" placeholder="Your address..." class="info" id="address">
+                    </div>
+
+                    <label for="city">City</label>
+                    <div class="bar">
+                        <i class="fa-solid fa-city"></i>
+                        <input type="text" placeholder="Your city..." class="info" id="city">
+                    </div>
+
+                    <div class="form2">
+                        <div class="bottom1">
+                            <label for="country">Country</label>
+                    
+                            <select class="bar-low">
+                                <option selected disabled value="">Your country...</option>
+                                <option>Canada</option>
+                                <option>Coreia do Sul</option>
+                                <option>Italia</option>
+                            </select>
+                        </div>
+
+
+
+
+                        <div>
+                            <label for="postal-code">Postal code</label>
+                            <div class="bar-low">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <input type="number" placeholder="Your postal code..." class="info-small" id="postal-code">
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="final">
+                        <input type="checkbox" class="check">
+                        <label for="check" class="lab-bottom">Save this information for next time</label>
+                        <button type="submit" class="btn">Continue</button>
+                    </div>
+
+
+                </form>
+
+
+            </div> <!-- BOTTOM FORM -->
+
+
+        </section> <!--SECTION FORM END TAG-->
+
+
+
+        <aside> <!-- SIDE  -->
+            <div class="products">
+                <div class="prod">
+                    <img src="./Images/photo1.png" class="img1">
+
+                    <div class="price">
+                        <h3>Vintage Backbag</h3>
+
+                        <div class="money">
+                        <p>$54.99</p>
+                        <p>$94.99</p>
+                        </div>
+
+                        <div class="count-area">
+                            <button id="decrease" onclick="decrease1()">-</button>
+                            <p id="sum-el1">0</p>
+                            <button id="increase" onclick="increase1()">+</button>
+                        </div>
+
+                    </div>
                 </div>
 
-                <label for="phone">Phone</label>
-                <div class="bar">
-                   <i class="fa-solid fa-phone"></i>
-                   <input type="tel" placeholder="Enter your phone..." class="info" id="phone">
+                <div class="prod">
+                    <img src="./Images/photo2.png" class="img2">
+                    <div class="price">
+                        
+                        <h3>Levi Shoes</h3>
+
+                        <div class="money">
+                            <p>$74.99</p>
+                            <p>$124.99</p>
+                        </div>
+
+                        <div class="count-area">
+                            <button id="decrease" onclick="decrease2()">-</button>
+                            <p id="sum-el2">0</p>
+                            <button id="increase" onclick="increase2()">+</button>
+                        </div>
+
+                    </div>
                 </div>
-            </form>
+            </div>
 
-        </div>
-
-        <!-- TOP FORM -->
-
-
-        <!-- BOTTOM FORM -->
-
-        <h2>Shipping Address</h2>
-        <div>
-
-            <form action="" class="low-form">
-
-                <label for="name">Full name</label>
-                <div class="bar">
-                    <i class="fa-solid fa-circle-user"></i>
-                   <input type="text" placeholder="Enter your name..." class="info" id="name">
+            <div class="payment">
+                <div class="pay">
+                    <p>Shipping</p>
+                    <p>$19</p>
                 </div>
-
-                <label for="address">Address</label>
-                <div class="bar">
-                    <i class="fa-solid fa-house"></i>
-                   <input type="text" placeholder="Your address..." class="info" id="address">
-                </div>
-
-                <label for="city">City</label>
-                <div class="bar">
-                   <i class="fa-solid fa-city"></i>
-                   <input type="text" placeholder="Your city..." class="info" id="city">
-                </div>
-
-                <div class="form2">
-                <div class="bottom1">
-                 <label for="country">Country</label>
         
-                 <select class="bar-low">
-                    <option selected disabled value="">Your country...</option>
-                 </select>
+                <div class="pay">
+                    <p>Total</p>
+                    <p id="total-el">$</p>
                 </div>
-
-
-
-
-                <div>
-                 <label for="postal-code">Postal code</label>
-                  <div class="bar-low">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <input type="number" placeholder="Your postal code..." class="info-small" id="postal-code">
-                  </div>
-                </div>
-                
-                </div>
-            <div class="final">
-            <input type="checkbox" class="check">
-            <label for="check" class="lab-bottom">Save this information for next time</label>
-            <button type="submit" class="btn">Continue</button>
             </div>
 
-
-            </form>
-
-
-        </div>
+        </aside> <!-- SIDE -->
 
 
-        <!-- BOTTOM FORM -->
-
-
-    </main>
-
-
-    <!-- SIDE  -->
-
-    <aside>
-        <div class="products">
-            <div class="prod">
-             <img src="./Images/photo1.png" class="img1">
-              <div class="price">
-                <h3>Vintage Backbag</h3>
-                <div class="money">
-                 <p>$54.99</p>
-                 <p>$94.99</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="prod">
-            <img src="./Images/photo2.png" class="img2">
-             <div class="price">
-                <h3>Levi Shoes</h3>
-                <div class="money">
-                 <p>$74.99</p>
-                 <p>$124.99</p>
-                </div>
-             </div>
-            </div>
-        </div>
-
-        <div class="payment">
-            <div class="pay">
-            <p>Shipping</p>
-            <p>$19</p>
-            </div>
-    
-            <div class="pay">
-            <p>Total</p>
-            <p>$148.98</p>
-            </div>
-        </div>
-
-    </aside>
-
-    <!-- SIDE -->
+    </main> <!-- MAIN END TAG -->
 
 
     <footer>
         <p>created by <a target="_blank" href="https://devchallenges.io/portfolio/VitorCorrea98">Vitor Correa</a> - devChallenges.io</p>
     </footer>
     
+    <script src="./script.js"></script>
 </body>
 </html>
